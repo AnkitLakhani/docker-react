@@ -6,4 +6,4 @@ before_install:
   - docker build -t ankitlakhani/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run ankitlakhani/docker-react npm run test -- --coverage
+  - docker run ankitlakhani/docker-react npm run test -- --coverage --watchAll=false
